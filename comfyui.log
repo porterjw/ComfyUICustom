@@ -1,4 +1,4 @@
-** ComfyUI start up time: 2023-12-06 15:16:29.800532
+** ComfyUI start up time: 2023-12-06 17:25:50.109834
 
 Prestartup times for custom nodes:
    0.0 seconds: /Users/porterweisberg/Developer/PixelGen/ComfyUICustom/custom_nodes/ComfyUI-Manager
@@ -9,7 +9,7 @@ Device: mps
 VAE dtype: torch.float32
 Using sub quadratic optimization for cross attention, if you have memory or speed issues try using: --use-split-cross-attention
 ### Loading: ComfyUI-Manager (V1.6.3)
-### ComfyUI Revision: 1788 [2db86b46] | Released on '2023-12-06'
+### ComfyUI Revision: 1789 [8e1e8a48] | Released on '2023-12-06'
 [34mFizzleDorf Custom Nodes: [92mLoaded[0m
 
 Import times for custom nodes:
@@ -18,6 +18,7 @@ Import times for custom nodes:
    0.0 seconds: /Users/porterweisberg/Developer/PixelGen/ComfyUICustom/custom_nodes/mask_ops.py
    0.0 seconds: /Users/porterweisberg/Developer/PixelGen/ComfyUICustom/custom_nodes/palettize.py
    0.0 seconds: /Users/porterweisberg/Developer/PixelGen/ComfyUICustom/custom_nodes/make_model_tileable.py
+   0.0 seconds: /Users/porterweisberg/Developer/PixelGen/ComfyUICustom/custom_nodes/async_return_img.py
    0.0 seconds: /Users/porterweisberg/Developer/PixelGen/ComfyUICustom/custom_nodes/ComfyUI-VideoHelperSuite
    0.0 seconds: /Users/porterweisberg/Developer/PixelGen/ComfyUICustom/custom_nodes/ComfyUI-Frame-Interpolation
    0.0 seconds: /Users/porterweisberg/Developer/PixelGen/ComfyUICustom/custom_nodes/ComfyUI-AnimateDiff-Evolved
@@ -40,7 +41,10 @@ Requested to load SD1ClipModel
 Loading 1 new model
 Requested to load BaseModel
 Loading 1 new model
-100%|███████████████████████████████████████████| 20/20 [00:02<00:00,  9.42it/s]
+100%|███████████████████████████████████████████| 20/20 [00:02<00:00, 12.12it/s]100%|███████████████████████████████████████████| 20/20 [00:02<00:00,  9.40it/s]
 Requested to load AutoencoderKL
 Loading 1 new model
-Prompt executed in 6.38 seconds
+Prompt executed in 5.43 seconds
+prompt async
+100%|███████████████████████████████████████████| 20/20 [00:01<00:00, 11.74it/s]
+Prompt executed in 2.52 seconds
