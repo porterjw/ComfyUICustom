@@ -1,4 +1,4 @@
-** ComfyUI start up time: 2023-12-06 17:15:58.666041
+** ComfyUI start up time: 2024-01-05 12:23:22.971603
 
 Prestartup times for custom nodes:
    0.0 seconds: /Users/porterweisberg/Developer/PixelGen/ComfyUICustom/custom_nodes/ComfyUI-Manager
@@ -9,7 +9,7 @@ Device: mps
 VAE dtype: torch.float32
 Using sub quadratic optimization for cross attention, if you have memory or speed issues try using: --use-split-cross-attention
 ### Loading: ComfyUI-Manager (V1.6.3)
-### ComfyUI Revision: 1789 [8e1e8a48] | Released on '2023-12-06'
+### ComfyUI Revision: 1791 [353647c2] | Released on '2023-12-06'
 [34mFizzleDorf Custom Nodes: [92mLoaded[0m
 
 Import times for custom nodes:
@@ -17,195 +17,30 @@ Import times for custom nodes:
    0.0 seconds: /Users/porterweisberg/Developer/PixelGen/ComfyUICustom/custom_nodes/patterngen.py
    0.0 seconds: /Users/porterweisberg/Developer/PixelGen/ComfyUICustom/custom_nodes/mask_ops.py
    0.0 seconds: /Users/porterweisberg/Developer/PixelGen/ComfyUICustom/custom_nodes/palettize.py
-   0.0 seconds: /Users/porterweisberg/Developer/PixelGen/ComfyUICustom/custom_nodes/async_return_img.py
    0.0 seconds: /Users/porterweisberg/Developer/PixelGen/ComfyUICustom/custom_nodes/make_model_tileable.py
+   0.0 seconds: /Users/porterweisberg/Developer/PixelGen/ComfyUICustom/custom_nodes/async_return_img.py
    0.0 seconds: /Users/porterweisberg/Developer/PixelGen/ComfyUICustom/custom_nodes/ComfyUI-VideoHelperSuite
    0.0 seconds: /Users/porterweisberg/Developer/PixelGen/ComfyUICustom/custom_nodes/ComfyUI-Frame-Interpolation
    0.0 seconds: /Users/porterweisberg/Developer/PixelGen/ComfyUICustom/custom_nodes/ComfyUI-AnimateDiff-Evolved
    0.1 seconds: /Users/porterweisberg/Developer/PixelGen/ComfyUICustom/custom_nodes/ComfyUI-Manager
-   0.1 seconds: /Users/porterweisberg/Developer/PixelGen/ComfyUICustom/custom_nodes/ComfyUI_FizzNodes
+   0.2 seconds: /Users/porterweisberg/Developer/PixelGen/ComfyUICustom/custom_nodes/ComfyUI_FizzNodes
    0.4 seconds: /Users/porterweisberg/Developer/PixelGen/ComfyUICustom/custom_nodes/remove_background.py
 
 Starting server
 
 To see the GUI go to: http://127.0.0.1:8188
-prompt async
-ERROR:root:Failed to validate prompt for output 19:
-ERROR:root:* (prompt):
-ERROR:root:  - Required input is missing: images
-ERROR:root:* PreviewImage 19:
-ERROR:root:  - Required input is missing: images
-ERROR:root:Output will be ignored
-ERROR:root:Failed to validate prompt for output 26:
-ERROR:root:* (prompt):
-ERROR:root:  - Required input is missing: images
-ERROR:root:* SaveImage 26:
-ERROR:root:  - Required input is missing: images
-ERROR:root:Output will be ignored
-model_type EPS
-adm 0
-Using split attention in VAE
-Working with z of shape (1, 4, 32, 32) = 4096 dimensions.
-Using split attention in VAE
-missing {'cond_stage_model.clip_l.logit_scale', 'cond_stage_model.clip_l.text_projection'}
-left over keys: dict_keys(['model_ema.decay', 'model_ema.num_updates', 'cond_stage_model.clip_l.transformer.text_model.embeddings.position_ids'])
-Requested to load SD1ClipModel
-Loading 1 new model
-Requested to load BaseModel
-Loading 1 new model
-100%|███████████████████████████████████████████| 20/20 [00:02<00:00, 12.11it/s]100%|███████████████████████████████████████████| 20/20 [00:02<00:00,  9.09it/s]
-Requested to load AutoencoderKL
-Loading 1 new model
-Auto number of colors: 63
-Prompt executed in 4.98 seconds
-prompt async
-ERROR:root:Failed to validate prompt for output 19:
-ERROR:root:* (prompt):
-ERROR:root:  - Required input is missing: images
-ERROR:root:* PreviewImage 19:
-ERROR:root:  - Required input is missing: images
-ERROR:root:Output will be ignored
-ERROR:root:Failed to validate prompt for output 26:
-ERROR:root:* (prompt):
-ERROR:root:  - Required input is missing: images
-ERROR:root:* SaveImage 26:
-ERROR:root:  - Required input is missing: images
-ERROR:root:Output will be ignored
-100%|███████████████████████████████████████████| 20/20 [00:01<00:00, 11.74it/s]
-Auto number of colors: 65
-Prompt executed in 2.04 seconds
-got prompt
-100%|███████████████████████████████████████████| 20/20 [00:01<00:00, 11.58it/s]
-Auto number of colors: 50
-Prompt executed in 2.96 seconds
-ERROR:aiohttp.server:Error handling request
-Traceback (most recent call last):
-  File "/Users/porterweisberg/Developer/PixelGen/ComfyUICustom/venv/lib/python3.11/site-packages/aiohttp/web_protocol.py", line 350, in data_received
-    messages, upgraded, tail = self._request_parser.feed_data(data)
-                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "aiohttp/_http_parser.pyx", line 557, in aiohttp._http_parser.HttpParser.feed_data
-  File "aiohttp/_http_parser.pyx", line 681, in aiohttp._http_parser.cb_on_url
-aiohttp.http_exceptions.LineTooLong: 400, message:
-  Got more than 8190 bytes (102908) when reading Status line is too long.
-prompt async
-ERROR:root:Failed to validate prompt for output 19:
-ERROR:root:* (prompt):
-ERROR:root:  - Required input is missing: images
-ERROR:root:* PreviewImage 19:
-ERROR:root:  - Required input is missing: images
-ERROR:root:Output will be ignored
-ERROR:root:Failed to validate prompt for output 26:
-ERROR:root:* (prompt):
-ERROR:root:  - Required input is missing: images
-ERROR:root:* SaveImage 26:
-ERROR:root:  - Required input is missing: images
-ERROR:root:Output will be ignored
-100%|███████████████████████████████████████████| 20/20 [00:01<00:00, 11.80it/s]
-Auto number of colors: 62
-Prompt executed in 2.09 seconds
-got prompt
-ERROR:root:Failed to validate prompt for output 28:
-ERROR:root:* (prompt):
-ERROR:root:  - Required input is missing: images
-ERROR:root:* AsyncImageReturn 28:
-ERROR:root:  - Required input is missing: images
-ERROR:root:Output will be ignored
-100%|███████████████████████████████████████████| 20/20 [00:01<00:00, 11.46it/s]
-Auto number of colors: 50
-Prompt executed in 2.86 seconds
-got prompt
-ERROR:root:Failed to validate prompt for output 28:
-ERROR:root:* (prompt):
-ERROR:root:  - Required input is missing: images
-ERROR:root:* AsyncImageReturn 28:
-ERROR:root:  - Required input is missing: images
-ERROR:root:Output will be ignored
-Prompt executed in 0.00 seconds
-got prompt
-ERROR:root:Failed to validate prompt for output 28:
-ERROR:root:* (prompt):
-ERROR:root:  - Required input is missing: images
-ERROR:root:* AsyncImageReturn 28:
-ERROR:root:  - Required input is missing: images
-ERROR:root:Output will be ignored
-100%|███████████████████████████████████████████| 20/20 [00:01<00:00, 11.56it/s]
-Auto number of colors: 34
-Prompt executed in 2.78 seconds
-got prompt
-ERROR:root:Failed to validate prompt for output 28:
-ERROR:root:* (prompt):
-ERROR:root:  - Required input is missing: images
-ERROR:root:* AsyncImageReturn 28:
-ERROR:root:  - Required input is missing: images
-ERROR:root:Output will be ignored
-100%|███████████████████████████████████████████| 20/20 [00:01<00:00, 11.34it/s]
-Auto number of colors: 24
-PERFORMANCE WARNING:
-Thresholded incomplete Cholesky decomposition failed due to insufficient positive-definiteness of matrix A with parameters:
-    discard_threshold = 1.000000e-04
-    shift = 0.000000e+00
-Try decreasing discard_threshold or start with a larger shift
-
-PERFORMANCE WARNING:
-Thresholded incomplete Cholesky decomposition failed due to insufficient positive-definiteness of matrix A with parameters:
-    discard_threshold = 1.000000e-04
-    shift = 1.000000e-04
-Try decreasing discard_threshold or start with a larger shift
-
-PERFORMANCE WARNING:
-Thresholded incomplete Cholesky decomposition failed due to insufficient positive-definiteness of matrix A with parameters:
-    discard_threshold = 1.000000e-04
-    shift = 1.000000e-03
-Try decreasing discard_threshold or start with a larger shift
-
-PERFORMANCE WARNING:
-Thresholded incomplete Cholesky decomposition failed due to insufficient positive-definiteness of matrix A with parameters:
-    discard_threshold = 1.000000e-04
-    shift = 1.000000e-02
-Try decreasing discard_threshold or start with a larger shift
-
-Prompt executed in 5.05 seconds
-got prompt
-ERROR:root:Failed to validate prompt for output 28:
-ERROR:root:* (prompt):
-ERROR:root:  - Required input is missing: images
-ERROR:root:* AsyncImageReturn 28:
-ERROR:root:  - Required input is missing: images
-ERROR:root:Output will be ignored
-Prompt executed in 0.72 seconds
-got prompt
-ERROR:root:Failed to validate prompt for output 28:
-ERROR:root:* (prompt):
-ERROR:root:  - Required input is missing: images
-ERROR:root:* AsyncImageReturn 28:
-ERROR:root:  - Required input is missing: images
-ERROR:root:Output will be ignored
-Prompt executed in 0.72 seconds
-got prompt
-ERROR:root:Failed to validate prompt for output 28:
-ERROR:root:* (prompt):
-ERROR:root:  - Required input is missing: images
-ERROR:root:* AsyncImageReturn 28:
-ERROR:root:  - Required input is missing: images
-ERROR:root:Output will be ignored
-Prompt executed in 0.71 seconds
-got prompt
-ERROR:root:Failed to validate prompt for output 28:
-ERROR:root:* (prompt):
-ERROR:root:  - Required input is missing: images
-ERROR:root:* AsyncImageReturn 28:
-ERROR:root:  - Required input is missing: images
-ERROR:root:Output will be ignored
-Prompt executed in 0.71 seconds
-got prompt
-ERROR:root:Failed to validate prompt for output 28:
-ERROR:root:* (prompt):
-ERROR:root:  - Required input is missing: images
-ERROR:root:* AsyncImageReturn 28:
-ERROR:root:  - Required input is missing: images
-ERROR:root:Output will be ignored
-100%|███████████████████████████████████████████| 20/20 [00:01<00:00, 11.13it/s]
-Auto number of colors: 32
-Prompt executed in 2.82 seconds
+FETCH DATA from: /Users/porterweisberg/Developer/PixelGen/ComfyUICustom/custom_nodes/ComfyUI-Manager/extension-node-map.json
+FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
+FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
+FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
+Install custom node 'Image Resize for ComfyUI'
+install: ['https://github.com/palant/image-resize-comfyui']
+Download: git clone 'https://github.com/palant/image-resize-comfyui'
+0it [00:00, ?it/s]100%|██████████████████████████████████████| 10.0/10.0 [00:00<00:00, 15.41it/s]100%|██████████████████████████████████████| 10.0/10.0 [00:00<00:00, 15.40it/s]100%|██████████████████████████████████████| 10.0/10.0 [00:00<00:00, 15.35it/s]100%|██████████████████████████████████████| 10.0/10.0 [00:00<00:00, 15.34it/s]100%|██████████████████████████████████████| 10.0/10.0 [00:00<00:00, 14.10it/s]100%|██████████████████████████████████████| 10.0/10.0 [00:00<00:00, 14.09it/s]100%|████████████████████████████████████████| 2.0/2.0 [00:00<00:00,  2.82it/s]100%|████████████████████████████████████████| 2.0/2.0 [00:00<00:00,  2.82it/s]100%|████████████████████████████████████████| 2.0/2.0 [00:00<00:00,  2.14it/s]
+Installation was successful.
+After restarting ComfyUI, please refresh the browser.
+FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
+FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
+FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
 
 Stopped server
